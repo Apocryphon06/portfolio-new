@@ -1,4 +1,5 @@
 import React from "react";
+import me from '../../assets/me.jpg'
 
 const HeroSection = () => {
   return (
@@ -12,8 +13,8 @@ const HeroSection = () => {
 
       <div className="bg-gradient-to-b from-[#E70FAA] to-[#00C0FD] lg:w-[370px] w-[260px] h-[260px] lg:h-[370px] rounded-full flex justify-center items-center">
         <img
-          className="lg:w-[359px] w-[250px] lg:h-[359px] h-[250px] rounded-full"
-          src="https://picsum.photos/400"
+          className="lg:w-[359px] w-[250px] lg:h-[359px] h-[250px] rounded-full object-cover grayscale"
+          src={me}
           alt=""
         />
       </div>

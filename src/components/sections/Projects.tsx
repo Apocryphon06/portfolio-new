@@ -13,7 +13,7 @@ const Card = ({ data }: any) => {
       className="lg:w-[330px] w-[290px] rounded-xl bg-[#fff]"
     >
       <img
-        className="lg:w-[330px] w-[290px] h-[260px] rounded-tl-xl rounded-tr-xl"
+        className="lg:w-[330px] w-[290px] h-[260px] rounded-tl-xl rounded-tr-xl object-cover"
         src="https://picsum.photos/400"
         alt=""
       />

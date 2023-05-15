@@ -19,12 +19,12 @@ export const menuItems = [
   {
     id: 1,
     name: "Home",
-    link: "#",
+    link: "/",
   },
   {
     id: 2,
     name: "About",
-    link: "#",
+    link: "/about",
   },
   {
     id: 3,
@@ -146,5 +146,29 @@ export const projectList = [
     techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
     live: "https://covid19-info-final.netlify.app",
     repo: "https://github.com/Apocryphon06/covid-19",
+  },
+];
+
+export const workData = [
+  {
+    company: "Scubeelate Technologies",
+    location: "Bangalore",
+    role: "Frontend Developer",
+    type: "Fulltime",
+    period: "Dec 2022 - Present",
+  },
+  {
+    company: "Capgemini Technologies",
+    location: "Bangalore",
+    role: "Software Engineer - 1",
+    type: "Fulltime",
+    period: "Jun 2021 - Dec 2022",
+  },
+  {
+    company: "Exposys Data Labs",
+    location: "Bangalore",
+    role: "Web Developer Intern",
+    type: "Internship",
+    period: "May 2020 - Aug 2020",
   },
 ];

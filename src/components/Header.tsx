@@ -2,7 +2,7 @@ import { headerIcons, menuItems } from "./utils/helpers";
 import React, { useState } from "react";
 import menu from "../assets/icons/menu.svg";
 import Logo from "./Logo";
-
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -18,9 +18,11 @@ const Header = () => {
 
         <div className="lg:flex hidden items-center gap-10">
           {menuItems.map((item: any) => (
-            <p className="text-lg font-medium text-[#666666] hover:text-[#000] cursor-pointer">
-              {item?.name}
-            </p>
+            <Link to={item.link}>
+              <p className="text-lg font-medium text-[#666666] hover:text-[#000] cursor-pointer">
+                {item?.name}
+              </p>
+            </Link>
           ))}
 
           <div className="lg:flex hidden items-center gap-5">

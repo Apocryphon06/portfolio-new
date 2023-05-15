@@ -58,7 +58,9 @@ const Card = ({ data }: any) => {
 const Projects = () => {
   return (
     <div className="my-[200px]">
-      <Heading title="Projects" subText="Things I’ve built so far" />
+      <div className="flex justify-center items-center text-center">
+        <Heading title="Projects" subText="Things I’ve built so far" />
+      </div>
       <div className="flex items-center justify-center lg:mt-20 mt-10">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-20 gap-10">
           {projectList.map((item) => (

@@ -12,11 +12,13 @@ const Card = ({ data }: any) => {
       }}
       className="lg:w-[330px] w-[290px] rounded-xl bg-[#fff]"
     >
-      <img
-        className="lg:w-[330px] w-[290px] h-[260px] rounded-tl-xl rounded-tr-xl object-cover"
-        src="https://picsum.photos/400"
-        alt=""
-      />
+      <a href={data.live} target="__blank">
+        <img
+          className="lg:w-[330px] w-[290px] h-[260px] rounded-tl-xl rounded-tr-xl object-cover cursor-pointer"
+          src="https://picsum.photos/400"
+          alt=""
+        />
+      </a>
 
       <div className="p-5 flex flex-col gap-4">
         <p className="lg:text-2xl text-xl text-[#323232] font-medium">

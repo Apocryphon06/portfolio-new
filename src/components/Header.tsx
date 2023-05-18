@@ -4,6 +4,8 @@ import menu from "../assets/icons/menu.svg";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
 
+import { AnimatePresence, motion } from "framer-motion";
+
 const Header = () => {
   const [show, setShow] = useState(false);
 
@@ -42,13 +44,19 @@ const Header = () => {
         </div>
       </div>
 
-      {show && (
-        <div className="flex flex-col items-start gap-5 lg:px-10 px-5 bg-[#f2f2f2] py-5 fixed w-full z-99">
-          {menuItems.map((item) => (
-            <p className="text-lg text-[#666666] font-medium">{item.name}</p>
-          ))}
-        </div>
-      )}
+      <AnimatePresence>
+        {show && (
+          <motion.div className="flex flex-col items-start gap-5 lg:px-10 px-5 bg-[#f2f2f2] py-5">
+            {menuItems.map((item) => (
+              <Link to={item.link}>
+                <p className="text-lg text-[#666666] font-medium">
+                  {item.name}
+                </p>
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </React.Fragment>
   );
 };

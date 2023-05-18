@@ -47,14 +47,14 @@ const About = () => {
   return (
     <React.Fragment>
       <Header />
-      <div className="lg:px-40 px-5">
+      <div className="lg:px-10 px-5">
         <div className="my-10">
           <Heading title="About" />
           <p className="text-lg text-[#666] lg:w-[708px] md:w-[500px] w-full">
             Hi there, I'm Hrithik I love to design and build interactive single
             page web applications using the react library. I have over 2+ years
-            of experience with SDLC and Frontend development. I currently based
-            out of Bangalore. I'm actively looking for remote or hybrid
+            of experience with SDLC and Frontend development. I'm currently
+            based out of Bangalore. I'm actively looking for remote or hybrid
             opportunities.
           </p>
         </div>

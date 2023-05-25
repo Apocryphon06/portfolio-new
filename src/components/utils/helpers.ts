@@ -1,7 +1,6 @@
 import github from "../../assets/icons/github.svg";
 import twitter from "../../assets/icons/twitter.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
-
 import html from "../../assets/skills/html.svg";
 import css from "../../assets/skills/css.svg";
 import javascript from "../../assets/skills/javascript.svg";
@@ -108,7 +107,7 @@ export const projectList = [
     description:
       "Voluptate Lorem do nulla Lorem adipisicing duis laboris amet sint quis minim laboris minim tempor.",
     techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
-    live: "https://zaincare.com",
+    live: "https://zaincare.scube.me",
     repo: "#",
   },
   {

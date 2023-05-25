@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="flex lg:flex-row flex-col-reverse items-center justify-around lg:mt-[150px] mt-10 gap-5">
+    <div className="flex lg:flex-row flex-col-reverse items-center justify-around lg:mt-[150px] mt-10 gap-5 heroContainer">
       <div className="lg:text-6xl md:text-6xl text-4xl text-[#42446E] text-start font-medium tracking-wide lg:leading-snug">
         Hi{" "}
         <motion.div

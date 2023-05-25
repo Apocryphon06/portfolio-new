@@ -3,14 +3,21 @@ import Heading from "../Heading";
 import gitIcon from "../../assets/icons/gitIcon.svg";
 import link from "../../assets/icons/link.svg";
 import { projectList } from "../utils/helpers";
+import { useEffect } from "react";
+
+import { gsap } from "gsap";
+import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
 
 const Card = ({ data }: any) => {
+
+  
+
   return (
     <div
       style={{
         boxShadow: "2px 2px 100px rgba(0, 0, 0, 0.2)",
       }}
-      className="lg:w-[330px] w-[290px] rounded-xl bg-[#fff]"
+      className="lg:w-[330px] w-[290px] rounded-xl bg-[#fff] "
     >
       <a href={data.live} target="__blank">
         <img
@@ -58,8 +65,25 @@ const Card = ({ data }: any) => {
 };
 
 const Projects = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+    gsap.set(".projectsContainer", {
+      opacity: 0,
+    });
+
+    gsap.to(".projectsContainer", {
+      opacity: 1,
+      ease:'power1.easeInOut',
+      scrollTrigger: {
+        trigger: ".stackContainer",
+        start: "center",
+        scrub: 1,
+      },
+    });
+  });
   return (
-    <div className="my-[200px]">
+    <div className="my-[200px] projectsContainer">
       <div className="flex justify-center items-center text-center">
         <Heading title="Projects" subText="Things I’ve built so far" />
       </div>

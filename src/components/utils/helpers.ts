@@ -14,6 +14,13 @@ import sass from "../../assets/skills/sass.svg";
 import bootstrap from "../../assets/skills/bootstrap.svg";
 import greensock from "../../assets/skills/greensock.svg";
 
+
+import linked_in from '../../assets/images/linkedin.png'
+import covid19 from '../../assets/images/covid19.png'
+import inito from '../../assets/images/inito.png'
+import zaincare from '../../assets/images/zaincare.png'
+import clonify from '../../assets/images/clonify.png'
+
 export const menuItems = [
   {
     id: 1,
@@ -103,7 +110,7 @@ export const skills = [
 export const projectList = [
   {
     name: "Zaincare",
-    image: "",
+    image: zaincare,
     description:
       "Voluptate Lorem do nulla Lorem adipisicing duis laboris amet sint quis minim laboris minim tempor.",
     techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
@@ -112,7 +119,7 @@ export const projectList = [
   },
   {
     name: "Inito",
-    image: "",
+    image: inito,
     description:
       "Pariatur veniam excepteur fugiat anim nostrud eu id esse non.",
     techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
@@ -121,7 +128,7 @@ export const projectList = [
   },
   {
     name: "Clonify",
-    image: "",
+    image: clonify,
     description:
       "Voluptate sint officia quis ea eu ut ex proident tempor voluptate fugiat tempor reprehenderit ex.",
     techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
@@ -130,7 +137,7 @@ export const projectList = [
   },
   {
     name: "Linkedin Clone",
-    image: "",
+    image: linked_in,
     description:
       "Voluptate sint officia quis ea eu ut ex proident tempor voluptate fugiat tempor reprehenderit ex.",
     techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
@@ -139,7 +146,7 @@ export const projectList = [
   },
   {
     name: "Covid 19 Global Stats",
-    image: "",
+    image: covid19,
     description:
       "Voluptate sint officia quis ea eu ut ex proident tempor voluptate fugiat tempor reprehenderit ex.",
     techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",

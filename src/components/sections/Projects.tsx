@@ -9,20 +9,18 @@ import { gsap } from "gsap";
 import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
 
 const Card = ({ data }: any) => {
-
-  
-
   return (
     <div
       style={{
         boxShadow: "2px 2px 100px rgba(0, 0, 0, 0.2)",
       }}
-      className="lg:w-[330px] w-[290px] rounded-xl bg-[#fff] "
+      className="lg:w-[330px] w-[290px] rounded-xl bg-[#fff] hover:scale-[1.1] transition-all"
     >
       <a href={data.live} target="__blank">
         <img
-          className="lg:w-[330px] w-[290px] h-[260px] rounded-tl-xl rounded-tr-xl object-cover cursor-pointer"
-          src="https://picsum.photos/400"
+          className="lg:w-[330px] w-[290px] h-[200px] rounded-tl-xl rounded-tr-xl object-contain cursor-pointer"
+          // src="https://picsum.photos/400"
+          src={data.image}
           alt=""
         />
       </a>
@@ -74,7 +72,7 @@ const Projects = () => {
 
     gsap.to(".projectsContainer", {
       opacity: 1,
-      ease:'power1.easeInOut',
+      ease: "power1.easeInOut",
       scrollTrigger: {
         trigger: ".stackContainer",
         start: "center",

@@ -5,7 +5,7 @@ import { skills } from "../utils/helpers";
 import { gsap } from "gsap";
 import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
 
-const TechStack = () => {
+const TechStack = ({ goto }: any) => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -15,7 +15,7 @@ const TechStack = () => {
 
     gsap.to(".techStack", {
       opacity: 1,
-      ease:'power1.easeInOut',
+      ease: "power1.easeInOut",
       scrollTrigger: {
         trigger: ".heroContainer",
         start: "center",
@@ -24,7 +24,7 @@ const TechStack = () => {
     });
   });
   return (
-    <div className="my-[200px] stackContainer">
+    <div ref={goto} className="my-[200px] stackContainer">
       <div className="flex justify-center items-center text-center techStack ">
         <Heading
           title="Tech Stack"
@@ -45,7 +45,7 @@ const TechStack = () => {
             //     delay: 0.2 * index + 1,
             //   }}
             // >
-              <img src={item.logo} alt="" />
+            <img src={item.logo} alt="" />
             // </motion.div>
           ))}
         </div>

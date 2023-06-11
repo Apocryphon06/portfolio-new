@@ -14,7 +14,7 @@ const Card = ({ data }: any) => {
       style={{
         boxShadow: "2px 2px 100px rgba(0, 0, 0, 0.2)",
       }}
-      className="lg:w-[330px] w-[290px] rounded-xl bg-[#fff] hover:scale-[1.1] transition-all"
+      className="lg:w-[330px] w-[290px] rounded-xl bg-[#fff] "
     >
       <a href={data.live} target="__blank">
         <img
@@ -29,7 +29,7 @@ const Card = ({ data }: any) => {
         <p className="lg:text-2xl text-xl text-[#323232] font-medium">
           {data.name}
         </p>
-        <p className="text-[#808080] lg:text-lg text-base leading-tight font-light h-[100px]">
+        <p className="text-[#808080] lg:text-lg text-base leading-tight font-light h-[60px]">
           {data.description}
         </p>
 
@@ -62,7 +62,7 @@ const Card = ({ data }: any) => {
   );
 };
 
-const Projects = () => {
+const Projects = ({ goto }: any) => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -81,7 +81,7 @@ const Projects = () => {
     });
   });
   return (
-    <div className="my-[200px] projectsContainer">
+    <div ref={goto} className="my-[200px] projectsContainer">
       <div className="flex justify-center items-center text-center">
         <Heading title="Projects" subText="Things I’ve built so far" />
       </div>

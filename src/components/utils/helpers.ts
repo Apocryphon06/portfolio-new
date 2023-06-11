@@ -14,19 +14,23 @@ import sass from "../../assets/skills/sass.svg";
 import bootstrap from "../../assets/skills/bootstrap.svg";
 import greensock from "../../assets/skills/greensock.svg";
 
+import linked_in from "../../assets/images/linkedin.png";
+// import covid19 from '../../assets/images/covid19.png'
+import inito from "../../assets/images/inito.png";
+import zaincare from "../../assets/images/zaincare.png";
+import clonify from "../../assets/images/clonify.png";
+import whitespace from "../../assets/images/whitespace.png";
+import travelSite from "../../assets/images/travelSite.png";
+import minimal from "../../assets/images/minimal.png";
+import markAgency from "../../assets/images/markAgency.png";
 
-import linked_in from '../../assets/images/linkedin.png'
-import covid19 from '../../assets/images/covid19.png'
-import inito from '../../assets/images/inito.png'
-import zaincare from '../../assets/images/zaincare.png'
-import clonify from '../../assets/images/clonify.png'
 
 export const menuItems = [
-  {
-    id: 1,
-    name: "Home",
-    link: "/",
-  },
+  // {
+  //   id: 1,
+  //   name: "Home",
+  //   link: "/",
+  // },
   {
     id: 2,
     name: "About",
@@ -42,11 +46,11 @@ export const menuItems = [
     name: "Projects",
     link: "#",
   },
-  {
-    id: 5,
-    name: "Contact",
-    link: "#",
-  },
+  // {
+  //   id: 5,
+  //   name: "Contact",
+  //   link: "#",
+  // },
 ];
 
 export const headerIcons = [
@@ -111,27 +115,25 @@ export const projectList = [
   {
     name: "Zaincare",
     image: zaincare,
-    description:
-      "Voluptate Lorem do nulla Lorem adipisicing duis laboris amet sint quis minim laboris minim tempor.",
-    techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
+    description: "Revolutionize your healthcare experience with ‘ZainCare’. ",
+    techStack:
+      "HTML/CSS, Javascript, React, Tailwind CSS, Framer Motion and Typescript",
     live: "https://zaincare.scube.me",
     repo: "#",
   },
   {
     name: "Inito",
     image: inito,
-    description:
-      "Pariatur veniam excepteur fugiat anim nostrud eu id esse non.",
-    techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
+    description: "Track your fertility hormones at home, in 5 minutes.",
+    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
     live: "https://inito.netlify.app",
     repo: "https://github.com/Apocryphon06/inito",
   },
   {
     name: "Clonify",
     image: clonify,
-    description:
-      "Voluptate sint officia quis ea eu ut ex proident tempor voluptate fugiat tempor reprehenderit ex.",
-    techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
+    description: "A simple ecommerce website design.",
+    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
     live: "https://ikigai-clonify.netlify.app",
     repo: "https://github.com/Apocryphon06/clonify",
   },
@@ -139,19 +141,46 @@ export const projectList = [
     name: "Linkedin Clone",
     image: linked_in,
     description:
-      "Voluptate sint officia quis ea eu ut ex proident tempor voluptate fugiat tempor reprehenderit ex.",
-    techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
+      "Linkedin Clone built using ReactJS, Tailwind CSS and React toastify.",
+    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
     live: "https://apocryphon06-linkedin-clone.netlify.app",
     repo: "https://github.com/Apocryphon06/linkedin-clone",
   },
   {
-    name: "Covid 19 Global Stats",
-    image: covid19,
-    description:
-      "Voluptate sint officia quis ea eu ut ex proident tempor voluptate fugiat tempor reprehenderit ex.",
-    techStack: "HTML/CSS, Javascript, React, Tailwind and Typescript",
-    live: "https://covid19-info-final.netlify.app",
-    repo: "https://github.com/Apocryphon06/covid-19",
+    name: "Whitespace UI",
+    image: whitespace,
+    description: "Everything you need to scale a global team.",
+    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
+    live: "https://whitespace-ui.netlify.app",
+    repo: "https://github.com/hrithikscube/whitespace",
+  },
+  {
+    name: "Travel Site",
+    image: travelSite,
+    description: "Experience the world, one adventure at a time.",
+    techStack:
+      "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
+    live: "https://apocryphon06-travel-site-gsap.netlify.app/",
+    repo: "https://github.com/hrithikscube/travel-site",
+  },
+  {
+    name: "Minimal Portfolio Template",
+    image: minimal,
+    description: "Minimal portfolio template built using the react library.",
+    techStack:
+      "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
+    live: "https://apocryphon-portfolio.netlify.app/",
+    repo: "https://github.com/hrithikscube/portfolio",
+  },
+
+  {
+    name: "MarkAgency",
+    image: markAgency,
+    description: "Ignite Your Marketing Agency.",
+    techStack:  
+      "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
+    live: "https://markagency.netlify.app",
+    repo: "https://github.com/Apocryphon06/MarkAgency",
   },
 ];
 

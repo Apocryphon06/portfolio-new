@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 import { AnimatePresence, motion } from "framer-motion";
 
-const Header = () => {
+const Header = ({ handleTechStack, handleProjects }: any) => {
   const [show, setShow] = useState(false);
 
   const toggle = () => {
@@ -21,7 +21,12 @@ const Header = () => {
         <div className="lg:flex hidden items-center gap-10">
           {menuItems.map((item: any) => (
             <Link to={item.link}>
-              <p className="text-lg font-medium text-[#666666] hover:text-[#000] cursor-pointer">
+              <p
+                onClick={
+                  item?.name === "Tech Stack" ? handleTechStack : handleProjects
+                }
+                className="text-lg font-medium text-[#666666] hover:text-[#000] cursor-pointer"
+              >
                 {item?.name}
               </p>
             </Link>

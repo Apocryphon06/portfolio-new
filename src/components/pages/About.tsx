@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Header";
+// import Header from "../Header";
 import Heading from "../Heading";
 
 import address from "../../assets/icons/address.svg";
@@ -46,7 +46,7 @@ const ListItem = ({ data }: any) => {
 const About = () => {
   return (
     <React.Fragment>
-      <Header />
+      {/* <Header /> */}
       <div className="lg:px-10 px-5">
         <div className="my-10">
           <Heading title="About" />

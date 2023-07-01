@@ -23,7 +23,7 @@ import whitespace from "../../assets/images/whitespace.png";
 import travelSite from "../../assets/images/travelSite.png";
 import minimal from "../../assets/images/minimal.png";
 import markAgency from "../../assets/images/markAgency.png";
-
+import tasteat from "../../assets/images/tasteat.png";
 
 export const menuItems = [
   // {
@@ -122,6 +122,14 @@ export const projectList = [
     repo: "#",
   },
   {
+    name: "Tasteat",
+    image: tasteat,
+    description: "Welcome to Restaurantate",
+    techStack: "HTML/CSS, React, Tailwind CSS and Typescript",
+    live: "https://apocryphon06-tasteat.netlify.app/",
+    repo: "#",
+  },
+  {
     name: "Inito",
     image: inito,
     description: "Track your fertility hormones at home, in 5 minutes.",
@@ -158,8 +166,7 @@ export const projectList = [
     name: "Travel Site",
     image: travelSite,
     description: "Experience the world, one adventure at a time.",
-    techStack:
-      "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
+    techStack: "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
     live: "https://apocryphon06-travel-site-gsap.netlify.app/",
     repo: "https://github.com/hrithikscube/travel-site",
   },
@@ -167,18 +174,15 @@ export const projectList = [
     name: "Minimal Portfolio Template",
     image: minimal,
     description: "Minimal portfolio template built using the react library.",
-    techStack:
-      "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
+    techStack: "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
     live: "https://apocryphon-portfolio.netlify.app/",
     repo: "https://github.com/hrithikscube/portfolio",
   },
-
   {
     name: "MarkAgency",
     image: markAgency,
     description: "Ignite Your Marketing Agency.",
-    techStack:  
-      "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
+    techStack: "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
     live: "https://markagency.netlify.app",
     repo: "https://github.com/Apocryphon06/MarkAgency",
   },

@@ -23,7 +23,9 @@ import whitespace from "../../assets/images/whitespace.png";
 import travelSite from "../../assets/images/travelSite.png";
 import minimal from "../../assets/images/minimal.png";
 import markAgency from "../../assets/images/markAgency.png";
-import tasteat from "../../assets/images/tasteat.png";
+import duvet from "../../assets/images/duvet.png";
+import Building from "../../assets/images/Building.png";
+import ApplUniNow from "../../assets/images/ApplUniNow.png";
 
 export const menuItems = [
   // {
@@ -46,11 +48,7 @@ export const menuItems = [
     name: "Projects",
     link: "#",
   },
-  // {
-  //   id: 5,
-  //   name: "Contact",
-  //   link: "#",
-  // },
+ 
 ];
 
 export const headerIcons = [
@@ -117,58 +115,40 @@ export const projectList = [
     image: zaincare,
     description: "Revolutionize your healthcare experience with ‘ZainCare’. ",
     techStack:
-      "HTML/CSS, Javascript, React, Tailwind CSS, Framer Motion and Typescript",
+      "HTML/CSS, Javascript, React, Tailwind CSS, Greensock, Framer Motion and Typescript",
     live: "https://zaincare.scube.me",
-    repo: "#",
   },
   {
-    name: "Tasteat",
-    image: tasteat,
-    description: "Welcome to Restaurantate",
-    techStack: "HTML/CSS, React, Tailwind CSS and Typescript",
-    live: "https://apocryphon06-tasteat.netlify.app/",
-    repo: "#",
+    name: "Duvet",
+    image: duvet,
+    description: "Duvet Homes",
+    techStack: "HTML/CSS, React, Tailwind CSS and Typescript, Greensock, Framer motion",
+    live: "https://furnitureorfurnishing.netlify.app/", 
   },
   {
-    name: "Inito",
-    image: inito,
-    description: "Track your fertility hormones at home, in 5 minutes.",
-    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
-    live: "https://inito.netlify.app",
-    repo: "https://github.com/Apocryphon06/inito",
+    name: "Apply Uni Now",
+    image: ApplUniNow,
+    description: "Apply Uni Now . ",
+    techStack:
+      "HTML/CSS, Javascript, React, Tailwind CSS, Framer Motion and Typescript",
+    live: "https://www.applyuninow.com/",
   },
   {
-    name: "Clonify",
-    image: clonify,
-    description: "A simple ecommerce website design.",
-    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
-    live: "https://ikigai-clonify.netlify.app",
-    repo: "https://github.com/Apocryphon06/clonify",
+    name: "Building Engines",
+    image: Building,
+    description: "Building Engines(Prism)",
+    techStack:
+      "HTML/CSS, Javascript, React, Tailwind CSS, React styled components Framer Motion and Typescript Reducx,Redux Saga",
+    live: "https://www.buildingengines.com/",
   },
-  {
-    name: "Linkedin Clone",
-    image: linked_in,
-    description:
-      "Linkedin Clone built using ReactJS, Tailwind CSS and React toastify.",
-    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
-    live: "https://apocryphon06-linkedin-clone.netlify.app",
-    repo: "https://github.com/Apocryphon06/linkedin-clone",
-  },
-  {
-    name: "Whitespace UI",
-    image: whitespace,
-    description: "Everything you need to scale a global team.",
-    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
-    live: "https://whitespace-ui.netlify.app",
-    repo: "https://github.com/hrithikscube/whitespace",
-  },
+  
   {
     name: "Travel Site",
     image: travelSite,
     description: "Experience the world, one adventure at a time.",
     techStack: "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
     live: "https://apocryphon06-travel-site-gsap.netlify.app/",
-    repo: "https://github.com/hrithikscube/travel-site",
+    
   },
   {
     name: "Minimal Portfolio Template",
@@ -176,7 +156,6 @@ export const projectList = [
     description: "Minimal portfolio template built using the react library.",
     techStack: "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
     live: "https://apocryphon-portfolio.netlify.app/",
-    repo: "https://github.com/hrithikscube/portfolio",
   },
   {
     name: "MarkAgency",
@@ -184,7 +163,14 @@ export const projectList = [
     description: "Ignite Your Marketing Agency.",
     techStack: "HTML/CSS, React, Tailwind CSS, Greensock and Typescript",
     live: "https://markagency.netlify.app",
-    repo: "https://github.com/Apocryphon06/MarkAgency",
+  },
+  {
+    name: "Inito",
+    image: inito,
+    description: "Track your fertility hormones at home, in 5 minutes.",
+    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
+    live: "https://inito.netlify.app",
+    
   },
 ];
 
@@ -194,20 +180,27 @@ export const workData = [
     location: "Bangalore",
     role: "Frontend Developer",
     type: "Fulltime",
-    period: "Dec 2022 - Present",
+    period: "Nov 2022 - Sept 2023",
   },
   {
-    company: "Capgemini Technologies",
-    location: "Bangalore",
-    role: "Software Engineer - 1",
+    company: "Freelancing",
+    location: "Bhopal",
+    role: "Software Developer",
+    type: "Part-time",
+    period: "Feb 2022 - Oct 2022",
+  },
+  {
+    company: "Ksolves",
+    location: "New Delhi",
+    role: "Senior Software Developer",
     type: "Fulltime",
-    period: "Jun 2021 - Dec 2022",
+    period: "Jun 2021 - Jan 2022",
   },
   {
-    company: "Exposys Data Labs",
+    company: "Adhesphere Technologies",
     location: "Bangalore",
-    role: "Web Developer Intern",
-    type: "Internship",
-    period: "May 2020 - Aug 2020",
+    role: "Sr React Developer",
+    type: "Fulltime",
+    period: "Dec 2018 - May 2021",
   },
 ];

@@ -47,15 +47,6 @@ const Card = ({ data }: any) => {
               </p>
             </a>
           </div>
-
-          <div className="flex items-center gap-2">
-            <img className="w-[20px] h-[20px]" src={gitIcon} alt="" />
-            <a href={data.repo} target="__blank">
-              <p className="text-base hover:underline cursor-pointer">
-                View Code
-              </p>
-            </a>
-          </div>
         </div>
       </div>
     </div>

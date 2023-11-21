@@ -11,10 +11,10 @@ const Footer = () => {
 
         <div className="flex lg:flex-row flex-col lg:items-center items-start lg:gap-20 gap-5 mt-5">
           <p className="text-lg text-[#666] hover:text-[#000]">
-            +91 9731816547
+            +91 9755284130
           </p>
           <p className="text-lg text-[#666] hover:text-[#000]">
-            hrithikchandrashekar@gmail.com
+            at77245@gmail.com
           </p>
           <div className="flex items-center gap-5">
             {headerIcons.map((item) => (

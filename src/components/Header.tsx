@@ -15,7 +15,7 @@ const Header = ({ handleTechStack, handleProjects }: any) => {
 
   return (
     <React.Fragment>
-      <div className="flex items-center justify-between py-5 lg:px-10 md:px-10 px-5">
+      <div className="flex items-center justify-between py-5 lg:px-10 md:px-10 px-5 fixed w-full top-0 z-[90] bg-white/90">
         <Logo />
 
         <div className="lg:flex hidden items-center gap-10">

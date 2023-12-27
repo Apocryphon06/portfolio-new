@@ -26,6 +26,7 @@ import markAgency from "../../assets/images/markAgency.png";
 import duvet from "../../assets/images/duvet.png";
 import Building from "../../assets/images/Building.png";
 import ApplUniNow from "../../assets/images/ApplUniNow.png";
+import scube from "../../assets/images/scube.jpeg";
 
 export const menuItems = [
   // {
@@ -111,12 +112,20 @@ export const skills = [
 
 export const projectList = [
   {
+    name: "Scube",
+    image: scube,
+    description: "Transforming Vision into Digital Realities",
+    techStack:
+      "HTML/CSS, Javascript, React, Tailwind CSS, Greensock, Framer Motion and Typescript",
+    live: "https://velvety-kelpie-266b33.netlify.app/",
+  },
+  {
     name: "Zaincare",
     image: zaincare,
     description: "Revolutionize your healthcare experience with ‘ZainCare’. ",
     techStack:
       "HTML/CSS, Javascript, React, Tailwind CSS, Greensock, Framer Motion and Typescript",
-    live: "https://zaincare.scube.me",
+    live: "https://zaincare.com",
   },
   {
     name: "Duvet",

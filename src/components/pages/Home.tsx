@@ -12,10 +12,11 @@ const Home = () => {
   const handleTechStack = () => {
     techStack.current.scrollIntoView({
       behavior: "smooth",
-      block: "start",
+      block: "center",
       inline: "start",
     });
   };
+
   const handleProjects = () => {
     projects.current.scrollIntoView({
       behavior: "smooth",

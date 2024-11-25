@@ -1,11 +1,19 @@
 import github from "../../assets/icons/github.svg";
-import twitter from "../../assets/icons/twitter.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
 import html from "../../assets/skills/html.svg";
 import css from "../../assets/skills/css.svg";
 import javascript from "../../assets/skills/javascript.svg";
+import svelte from "../../assets/skills/svelte.svg";
+import java from "../../assets/skills/java.svg";
+import spring from "../../assets/skills/spring.svg";
+import python from "../../assets/skills/python.svg";
+import mui from "../../assets/skills/mui.svg";
+import nodejs from "../../assets/skills/nodejs.svg";
+import aws from "../../assets/skills/aws.svg";
+import typescript from "../../assets/skills/typescript.svg";
 import tailwind from "../../assets/skills/tailwind.svg";
 import react from "../../assets/skills/react.svg";
+import nextjs from "../../assets/skills/nextjs.svg";
 import redux from "../../assets/skills/redux.svg";
 import git from "../../assets/skills/git.svg";
 import gitIcon from "../../assets/skills/github.svg";
@@ -15,7 +23,6 @@ import bootstrap from "../../assets/skills/bootstrap.svg";
 import greensock from "../../assets/skills/greensock.svg";
 
 import linked_in from "../../assets/images/linkedin.png";
-// import covid19 from '../../assets/images/covid19.png'
 import inito from "../../assets/images/inito.png";
 import zaincare from "../../assets/images/zaincare.png";
 import clonify from "../../assets/images/clonify.png";
@@ -46,9 +53,6 @@ export const menuItems = [
     name: "Projects",
     link: "#",
   },
-  // {
-  //   id: 5,
-  //   name: "Contact",
   //   link: "#",
   // },
 ];
@@ -57,17 +61,12 @@ export const headerIcons = [
   {
     id: 100,
     logo: github,
-    link: "#",
-  },
-  {
-    id: 200,
-    logo: twitter,
-    link: "#",
+    link: "https://github.com/hrithikscube",
   },
   {
     id: 300,
     logo: linkedin,
-    link: "#",
+    link: "https://www.linkedin.com/in/hrithik-chandrashekar-397b43177/",
   },
 ];
 
@@ -82,15 +81,41 @@ export const skills = [
     logo: javascript,
   },
   {
+    logo: mui,
+  },
+  {
+    logo: typescript,
+  },
+  {
     logo: react,
+  },
+  {
+    logo: svelte,
+  },
+  {
+    logo: java,
+  },
+  {
+    logo: nextjs,
   },
   {
     logo: redux,
   },
   {
+    logo: nodejs,
+  },
+  {
     logo: bootstrap,
   },
-
+  {
+    logo: aws,
+  },
+  {
+    logo: spring,
+  },
+  {
+    logo: python,
+  },
   {
     logo: tailwind,
   },
@@ -113,12 +138,30 @@ export const skills = [
 
 export const projectList = [
   {
+    name: "Scube",
+    image: "/images/scube.png",
+    description: "Scube - The Smart Business Card",
+    techStack:
+      "HTML/CSS, Javascript, React, Next.js, Tailwind CSS, Framer Motion and Typescript",
+    live: "https://scube.me",
+    repo: "#",
+  },
+  {
+    name: "LWL8",
+    image: "/images/lwl8.png",
+    description: "LWL8 - Your Hydration Partner",
+    techStack:
+      "HTML/CSS, Javascript, React, Next.js, Tailwind CSS, Framer Motion and Typescript",
+    live: "https://scube.me",
+    repo: "#",
+  },
+  {
     name: "Zaincare",
     image: zaincare,
     description: "Revolutionize your healthcare experience with ‘ZainCare’. ",
     techStack:
       "HTML/CSS, Javascript, React, Tailwind CSS, Framer Motion and Typescript",
-    live: "https://zaincare.scube.me",
+    live: "https://zaincare.com",
     repo: "#",
   },
   {
@@ -126,7 +169,7 @@ export const projectList = [
     image: tasteat,
     description: "Welcome to Restaurantate",
     techStack: "HTML/CSS, React, Tailwind CSS and Typescript",
-    live: "https://apocryphon06-tasteat.netlify.app/",
+    live: "https://tasteat-restaurant.netlify.app/",
     repo: "#",
   },
   {
@@ -138,21 +181,21 @@ export const projectList = [
     repo: "https://github.com/Apocryphon06/inito",
   },
   {
+    name: "Linkedin Clone",
+    image: linked_in,
+    description:
+      "Linkedin Clone built using ReactJS, Tailwind CSS and React toastify.",
+    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
+    live: "https://venerable-halva-6bdd40.netlify.app/",
+    repo: "https://github.com/Apocryphon06/linkedin-clone",
+  },
+  {
     name: "Clonify",
     image: clonify,
     description: "A simple ecommerce website design.",
     techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
     live: "https://ikigai-clonify.netlify.app",
     repo: "https://github.com/Apocryphon06/clonify",
-  },
-  {
-    name: "Linkedin Clone",
-    image: linked_in,
-    description:
-      "Linkedin Clone built using ReactJS, Tailwind CSS and React toastify.",
-    techStack: "HTML/CSS, Javascript, React, Tailwind CSS and Typescript",
-    live: "https://apocryphon06-linkedin-clone.netlify.app",
-    repo: "https://github.com/Apocryphon06/linkedin-clone",
   },
   {
     name: "Whitespace UI",
@@ -192,14 +235,14 @@ export const workData = [
   {
     company: "Scubeelate Technologies",
     location: "Bangalore",
-    role: "Frontend Developer",
+    role: "Senior Software Engineer",
     type: "Fulltime",
     period: "Dec 2022 - Present",
   },
   {
     company: "Capgemini Technologies",
     location: "Bangalore",
-    role: "Software Engineer - 1",
+    role: "Software Engineer",
     type: "Fulltime",
     period: "Jun 2021 - Dec 2022",
   },

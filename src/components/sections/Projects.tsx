@@ -1,68 +1,66 @@
-import Heading from "../Heading";
-
-import gitIcon from "../../assets/icons/gitIcon.svg";
-import link from "../../assets/icons/link.svg";
-import { projectList } from "../utils/helpers";
-import { useEffect } from "react";
-
 import { gsap } from "gsap";
+import Heading from "../Heading";
+import { useEffect } from "react";
+import { projectList } from "../utils/helpers";
+import link from "../../assets/icons/link.svg";
+import gitIcon from "../../assets/icons/gitIcon.svg";
 import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
 
-const Card = ({ data }: any) => {
-  return (
-    <div
-      style={{
-        boxShadow: "2px 2px 100px rgba(0, 0, 0, 0.2)",
-      }}
-      className="lg:w-[330px] w-[290px] rounded-xl bg-[#fff] "
-    >
-      <div className="debug px-3 rounded-[16px] ">
-        <a href={data.live} target="__blank">
-          <img
-            className="w-full h-[200px] rounded-tl-xl rounded-tr-xl object-contain cursor-pointer rounded-[16px]"
-            // src="https://picsum.photos/400"
-            src={data.image}
-            alt=""
-          />
-        </a>
-      </div>
+// const Card = ({ data }: any) => {
+//   return (
+//     <div
+//       style={{
+//         boxShadow: "2px 2px 100px rgba(0, 0, 0, 0.2)",
+//       }}
+//       className="lg:w-[330px] w-[290px] rounded-xl bg-[#fff] "
+//     >
+//       <div className="debug px-3 rounded-[16px] ">
+//         <a href={data.live} target="__blank">
+//           <img
+//             className="w-full h-[200px] rounded-tl-xl rounded-tr-xl object-contain cursor-pointer rounded-[16px]"
+//             // src="https://picsum.photos/400"
+//             src={data.image}
+//             alt=""
+//           />
+//         </a>
+//       </div>
 
-      <div className="p-5 flex flex-col gap-4 relative">
-        <p className="lg:text-2xl text-xl text-[#323232] font-medium">
-          {data.name}
-        </p>
-        <p className="text-[#808080] lg:text-lg text-base leading-tight font-light h-[60px]">
-          {data.description}
-        </p>
+//       <div className="p-5 flex flex-col gap-4 relative">
+//         <p className="lg:text-2xl text-xl text-[#323232] font-medium">
+//           {data.name}
+//         </p>
+//         <p className="text-[#808080] lg:text-lg text-base leading-tight font-light h-[60px]">
+//           {data.description}
+//         </p>
 
-        <p className="text-[#42446E] text-base">
-          <span className="font-medium text-lg">Tech stack:</span>{" "}
-          {data.techStack}
-        </p>
+//         <p className="text-[#42446E] text-base">
+//           <span className="font-medium text-lg">Tech stack:</span>{" "}
+//           {data.techStack}
+//         </p>
 
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <img className="w-[20px] h-[20px]" src={link} alt="" />
-            <a href={data.live} target="__blank">
-              <p className="text-base hover:underline cursor-pointer">
-                Live Preview
-              </p>
-            </a>
-          </div>
+//         <div className="flex items-center justify-between">
+//           <div className="flex items-center gap-2">
+//             <img className="w-[20px] h-[20px]" src={link} alt="" />
+//             <a href={data.live} target="__blank">
+//               <p className="text-base hover:underline cursor-pointer">
+//                 Live Preview
+//               </p>
+//             </a>
+//           </div>
 
-          <div className="flex items-center gap-2">
-            <img className="w-[20px] h-[20px]" src={gitIcon} alt="" />
-            <a href={data.repo} target="__blank">
-              <p className="text-base hover:underline cursor-pointer">
-                View Code
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+//           <div className="flex items-center gap-2">
+//             <img className="w-[20px] h-[20px]" src={gitIcon} alt="" />
+//             <a href={data.repo} target="__blank">
+//               <p className="text-base hover:underline cursor-pointer">
+//                 View Code
+//               </p>
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 const Projects = ({ goto }: any) => {
   useEffect(() => {
@@ -83,7 +81,7 @@ const Projects = ({ goto }: any) => {
     });
   });
   return (
-    <div ref={goto} className="my-[200px] projectsContainer">
+    <div ref={goto} className=" projectsContainer flex flex-col w-full min-h-screen mb-20">
       <div className="flex justify-center items-center text-center">
         <Heading title="Projects" subText="Things I’ve built so far" />
       </div>
@@ -105,15 +103,15 @@ const Projects = ({ goto }: any) => {
               </div>
 
               <div className="flex flex-col h-9/12 flex-shrink-0 group">
-                <p className="font-medium lg:text-2xl text-lg group-hover:translate-y-[-5px] translate-y-[5px] transition ease-linear duration-200">
+                <p className="font-medium lg:text-2xl text-lg  transition ease-linear duration-200">
                   {item.name}
                 </p>
 
-                <div className="h-16 my-4 lg:text-base text-sm group-hover:translate-y-[-5px] translate-y-[5px] transition ease-linear duration-200">
+                <div className="h-16 my-4 lg:text-base text-sm  transition ease-linear duration-200">
                   <p>{item.description}</p>
                 </div>
 
-                <div className="h-20 group-hover:translate-y-[-5px] translate-y-[5px] transition ease-linear duration-200">
+                <div className="h-20  transition ease-linear duration-200">
                   <p className="lg:text-base text-sm">
                     <span className="text-base font-medium">Tech Stack:</span>{" "}
                     {item.techStack}

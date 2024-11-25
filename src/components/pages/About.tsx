@@ -28,11 +28,10 @@ const ListItem = ({ data }: any) => {
       <div className="flex flex-col items-center justify-center w-full">
         <div className="lg:w-[150px] md:w-[150px] w-[100px]">
           <p
-            className={`${
-              data.type === "Fulltime"
+            className={`${data.type === "Fulltime"
                 ? "bg-[#D7FFE0] text-[#018C0F]"
                 : "bg-blue-200 text-[#0D5BE1]"
-            } lg:text-base text-sm  px-3 py-2 rounded-full flex justify-center items-center flex-shrink-0`}
+              } lg:text-base text-sm  px-3 py-2 rounded-full flex justify-center items-center flex-shrink-0`}
           >
             {data?.type}
           </p>
@@ -52,7 +51,7 @@ const About = () => {
           <Heading title="About" />
           <p className="text-lg text-[#666] lg:w-[708px] md:w-[500px] w-full">
             Hi there, I'm Hrithik I love to design and build interactive single
-            page web applications using the react library. I have over 2+ years
+            page web applications using the react library. I have over 3+ years
             of experience with SDLC and Frontend development. I'm currently
             based out of Bangalore. I'm actively looking for remote or hybrid
             opportunities.

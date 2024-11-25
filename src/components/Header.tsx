@@ -34,7 +34,9 @@ const Header = ({ handleTechStack, handleProjects }: any) => {
 
           <div className="lg:flex hidden items-center gap-5">
             {headerIcons.map((item: any) => (
-              <img className="cursor-pointer" src={item.logo} alt="" />
+              <a href={item?.link} target="__blank">
+                <img className="cursor-pointer" src={item.logo} alt="" />
+              </a>
             ))}
           </div>
         </div>

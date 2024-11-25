@@ -25,7 +25,7 @@ const TechStack = ({ goto }: any) => {
     });
   });
   return (
-    <div ref={goto} className="my-[200px] stackContainer">
+    <div ref={goto} className="flex flex-col w-full min-h-screen stackContainer">
       <div className="flex justify-center items-center text-center techStack ">
         <Heading
           title="Tech Stack"
@@ -33,7 +33,7 @@ const TechStack = ({ goto }: any) => {
         />
       </div>
 
-      <div className="flex flex-col justify-center items-center lg:mt-20 mt-10 techStack gap-20">
+      <div className="flex flex-col justify-center items-center lg:mt-20 mt-10 techStack gap-32">
         {/* <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 items-center lg:gap-20 gap-10">
           {skills.map((item, index) => (
             <img src={item.logo} alt="" />
@@ -44,7 +44,7 @@ const TechStack = ({ goto }: any) => {
         <Marquee>
           <div className="flex items-center">
             {skills.map((item, index) => (
-              <img src={item.logo} alt="" className="w-[120px] h-[120px] mr-10" />
+              <img src={item.logo} alt="" className="w-[120px] h-[120px] mr-24" />
               // </motion.div>
             ))}
           </div>
@@ -53,7 +53,7 @@ const TechStack = ({ goto }: any) => {
         <Marquee direction="right">
           <div className="flex items-center">
             {skills.map((item, index) => (
-              <img src={item.logo} alt="" className="w-[120px] h-[120px] mr-10" />
+              <img src={item.logo} alt="" className="w-[120px] h-[120px] mr-24" />
               // </motion.div>
             ))}
           </div>

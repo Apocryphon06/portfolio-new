@@ -152,7 +152,7 @@ export const projectList = [
     description: "LWL8 - Your Hydration Partner",
     techStack:
       "HTML/CSS, Javascript, React, Next.js, Tailwind CSS, Framer Motion and Typescript",
-    live: "https://scube.me",
+    live: "https://lwl8.com",
     repo: "#",
   },
   {
